@@ -1,0 +1,99 @@
+
+* {
+    box-sizing: border-box
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+    padding: 25px 0px;
+    background-color: orange;
+    float: left;
+    margin: 10px;
+    
+}
+
+p {
+    clear: both;
+    overflow: auto;
+    float: left;
+    width: 550px;
+    height: 400px;
+    background-color: #fbe6cb;
+    color: green;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 20px 5px 20px 5px;
+
+}
+
+
+body {
+    background-image: url("../images/eight_horns.png");
+}
+
+#randomNumber {
+    clear: both;
+    overflow: auto;
+    font-size: 30px;
+    width: 250px;
+    height: 90px;
+    background-color: #49ba99;
+    float: left;
+    margin: 0px 10px 10px 10px;
+}
+
+.win-loss-tracker {
+    float: left;
+    height: 90px;
+    background-color: #4bfdfc;
+    margin-bottom: 10px;
+    width: 90px;
+    padding: 25px 10px;
+    
+}
+
+.images {
+
+    clear: both;
+    overflow: auto;
+    float: left;
+    margin-left:10px;
+    margin-bottom: 10px;
+}
+
+#image2, #image3 {
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+img {
+    width :200px;
+    height : 200px;
+}
+
+#scoreHeader {
+    clear: both;
+    overflow: auto;
+    background-color: #2ca194;
+    width: 300px;
+    height: 40px;
+    color: #eee;
+    margin: 0px 0 10px 10px;
+    font-size: 18px;
+    padding: 10px 5px;
+}
+
+#counter {
+    clear: both;
+    overflow: auto;
+    width: 300px;
+    height:100px;
+    color: #eee;
+    background-color: #2ca194;
+    margin: 0 0 10px 10px;
+    font-size: 30px;
+}

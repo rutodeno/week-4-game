@@ -12,20 +12,18 @@ function randomNumber(max, min){
 var gameTotal =  randomNumber(121,19);
 $("#randomNumber").text(gameTotal);
 
-console.log("var gameTotal "+gameTotal)
-
 // random number generation for the four crystals
 
 var crystalNum1 = randomNumber (13,1);
+$("#image1").attr("value", crystalNum1)
 var crystalNum2 = randomNumber (13,1);
+$("#image2").attr("value", crystalNum2)
 var crystalNum3 = randomNumber (13,1);
+$("#image3").attr("value", crystalNum3)
 var crystalNum4 = randomNumber (13,1);
+$("#image4").attr("value", crystalNum4)
 
 
-console.log("crystalNum1 "+ crystalNum1);
-console.log("crystalNum2 "+ crystalNum2);
-console.log("crystalNum3 "+ crystalNum3);
-console.log("crystalNum4 "+ crystalNum4);
 
 // var totalSum keeps track of our additions
 
@@ -43,8 +41,10 @@ var bravo = $("#image2");
 var charlie = $("#image3");
 var delta = $("#image4");
 
-function myFunc (imageId, crystalVal) {
+function myFunc (imageId) {
     imageId.on("click", function() {
+
+      var  crystalVal =parseInt($(this).attr("value"));
 
         totalSum += crystalVal;
         $("#counter").text(totalSum);
@@ -71,10 +71,10 @@ function myFunc (imageId, crystalVal) {
     });
 };
 
-myFunc (alpha, crystalNum1);
-myFunc (bravo, crystalNum2);
-myFunc (charlie, crystalNum3);
-myFunc (delta, crystalNum4);
+myFunc (alpha);
+myFunc (bravo);
+myFunc (charlie);
+myFunc (delta);
 
 function reset() {
 
@@ -84,15 +84,16 @@ function reset() {
     $("#randomNumber").text(gameTotal);
 
     crystalNum1 = randomNumber (13,1);
+    $("#image1").attr("value", crystalNum1)
 
     crystalNum2 = randomNumber (13,1);
+    $("#image2").attr("value", crystalNum2)
     crystalNum3 = randomNumber (13,1);
+    $("#image3").attr("value", crystalNum3)
     crystalNum4 = randomNumber (13,1);
+    $("#image4").attr("value", crystalNum4)
 
-    console.log("round2 "+ crystalNum1);
-    console.log("round2 "+ crystalNum2);
-    console.log("round2 "+ crystalNum3);
-    console.log("round2 "+ crystalNum4);
+
 
 }
 
